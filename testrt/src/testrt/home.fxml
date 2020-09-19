@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testrt.HomeController">
+   <children>
+      <Button fx:id="Registration" layoutX="69.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#Registration" prefHeight="71.0" prefWidth="132.0" text="Registration">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="AdminLogin" layoutX="219.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#Admin_Login" prefHeight="71.0" prefWidth="132.0" text="Admin Login">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="UserLogin" layoutX="371.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#User_Login" prefHeight="71.0" prefWidth="132.0" text="User Login">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

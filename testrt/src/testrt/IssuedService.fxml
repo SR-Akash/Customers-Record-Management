@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testrt.IssuedServiceController">
+   <children>
+      <TableView fx:id="issuedservicetable" layoutX="168.0" layoutY="53.0" prefHeight="404.0" prefWidth="370.0">
+         <columns>
+            <TableColumn fx:id="isid" prefWidth="53.0" text="ID" />
+            <TableColumn fx:id="isname" prefWidth="99.0" text="Name" />
+            <TableColumn fx:id="isiservice" prefWidth="103.0" text="Issued Service" />
+            <TableColumn fx:id="isrservice" prefWidth="113.0" text="Requested Sevice" />
+         </columns>
+      </TableView>
+      <Button fx:id="issueddelete" layoutX="277.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#issueddelete" text="Delete" />
+      <Button fx:id="issuedreload" layoutX="371.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#issuedreload" text="Reload" />
+      <Label layoutX="310.0" layoutY="14.0" text="Issued Service">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="56.0" layoutY="53.0" mnemonicParsing="false" onAction="#Handleback" text="Back" />
+   </children>
+</AnchorPane>

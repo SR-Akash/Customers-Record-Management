@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testrt.AdminservicesController">
+   <children>
+      <TableView fx:id="userdetailstable" layoutX="22.0" layoutY="55.0" onMouseClicked="#getuserdata" prefHeight="392.0" prefWidth="522.0">
+        <columns>
+          <TableColumn fx:id="u1" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="u2" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="u3" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="u4" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="u5" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="u6" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="u7" prefWidth="75.0" text="Gender" />
+        </columns>
+      </TableView>
+      <Button fx:id="delete" layoutX="566.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#delete" text="Delete" textFill="#ff0505">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="userreload" layoutX="565.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#userreload" text="Reload" textFill="#95019a">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="141.0" layoutY="12.0" prefHeight="28.0" prefWidth="293.0" text="Registread User Details" textFill="#3a08dd">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="28.0" layoutY="16.0" prefHeight="19.0" prefWidth="23.0" visible="false" />
+      <TextField fx:id="t2" layoutX="59.0" layoutY="16.0" prefHeight="19.0" prefWidth="23.0" visible="false" />
+      <TextField fx:id="t3" layoutX="94.0" layoutY="16.0" prefHeight="19.0" prefWidth="23.0" visible="false" />
+      <TextField fx:id="t4" layoutX="129.0" layoutY="16.0" prefHeight="19.0" prefWidth="23.0" visible="false" />
+      <TextField fx:id="t5" layoutX="168.0" layoutY="16.0" prefHeight="19.0" prefWidth="23.0" visible="false" />
+      <TextField fx:id="t6" layoutX="326.0" layoutY="16.0" prefHeight="19.0" prefWidth="23.0" visible="false" />
+      <TextField fx:id="t7" layoutX="360.0" layoutY="16.0" prefHeight="19.0" prefWidth="23.0" visible="false" />
+      <Button fx:id="fsservice" layoutX="599.0" layoutY="93.0" mnemonicParsing="false" onAction="#Handlefsservice" prefHeight="74.0" prefWidth="133.0" text="Final Service">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="isservice" layoutX="599.0" layoutY="182.0" mnemonicParsing="false" onAction="#Handleisservice" prefHeight="74.0" prefWidth="133.0" text="Issued Service">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="695.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#handleback" text="Log Out" textFill="#f20808">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
